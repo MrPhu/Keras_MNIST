@@ -12,14 +12,14 @@ path_to_project = "D:\\Python36\\Git\\Keras_MNIST\\" #change path_to_project dep
 
 
 #load jsonfile
-path_to_json = path_to_project + "Trained_Model\\model.json"
+path_to_json = path_to_project + "model.json"
 json_file = open(path_to_json,'r')
 loaded_model_json = json_file.read()
 json_file.close()
 
 
 #load weight
-path_to_weights = path_to_project + "Trained_Model\\model.h5"
+path_to_weights = path_to_project + "model.h5"
 loaded_model = model_from_json(loaded_model_json)
 loaded_model.load_weights(path_to_weights)
 
